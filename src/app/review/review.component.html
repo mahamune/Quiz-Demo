@@ -1,0 +1,17 @@
+
+
+<h4>QUIZZZ RESULT</h4>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 wrapper">
+            <h5>Total Marks : <span style="color: indianred">{{marks}}</span></h5>
+                <!-- <h6 *ngIf = 'marks == 0 '>Please attaempt Question</h6> -->
+            <div class="result" *ngFor = "let item of data">
+                <h5>Question : <span style="color: red">{{item.Question}}</span></h5>
+                <p> Answer: <span style="color: green"> {{item.answer}}</span></p>
+            </div>
+        </div>
+    </div>
+
+</div>

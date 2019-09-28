@@ -1,0 +1,20 @@
+
+
+.wrapper{
+    padding: 20px;
+}
+#qui{
+    background-color: pink;    
+    margin: 10px;
+    width: 600px;    
+    padding-bottom: 10px;
+    padding-left: 25px;
+}
+
+form{
+    margin-left: 15px;
+}
+
+.btn-success{
+    margin-left: 34% !important;
+}

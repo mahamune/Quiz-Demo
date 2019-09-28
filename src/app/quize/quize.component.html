@@ -1,0 +1,23 @@
+
+
+
+<div class="container wrapper">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-9">
+            <h3>Demo For Quiz</h3>
+            <div *ngFor='let item of quize; let i = index' id="qui">
+                <h5>{{i+1}}.{{item.Question}}</h5>
+                <span *ngFor='let item1 of item.options'>
+                    <form>
+                        <input type="checkbox" (click)="check($event,item1,item)" value="item1"> {{item1}} <br>
+                    </form>
+                </span>
+            </div>
+            <button (click)="submitPaper()" class="btn btn-success">Submit</button>
+            <!-- <button  routerLink = "/result" class="btn btn-success">Submit</button> -->
+        </div>
+    </div>
+</div>
+
